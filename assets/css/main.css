@@ -1,0 +1,736 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+header nav {
+  width: 85%;
+  margin: auto;
+}
+header nav .navbutton {
+  background-color: white;
+}
+header nav .collapseDiv {
+  justify-content: flex-end;
+}
+
+#eatwell {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://preview.colorlib.com/theme/eatwell/images/bg_3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#eatwell .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#eatwell .container .eatwellitem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#eatwell .container .eatwellitem h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+#eatwell .container .eatwellitem p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: grey;
+  font-size: 20px;
+}
+#eatwell .container .eatwellitem button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+#eatwell .container .eatwellitem button:hover {
+  background-color: white;
+  color: black;
+}
+
+#welcome {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+#welcome .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#welcome .container .welcomeitem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#welcome .container .welcomeitem span {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #d4d4d4;
+}
+#welcome .container .welcomeitem h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+}
+#welcome .container .welcomeitem p {
+  font-size: 17px;
+  color: #bcb3b3;
+}
+#welcome .container .welcomeitem button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 170px;
+  height: 50px;
+  border: 2px solid #bcb3b3;
+  background-color: transparent;
+  color: #bcb3b3;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 13px;
+}
+#welcome .container .welcomeitem button:hover {
+  background-color: #FDA403;
+  color: white;
+}
+#welcome .container .welcomeitem img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#products {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #F8F9FA;
+}
+#products .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#products .container .productsheader {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#products .container .productsheader span {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #d4d4d4;
+}
+#products .container .productsheader h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+#products .container .productsheader p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  font-size: 20px;
+  color: #bcb3b3;
+}
+#products .container #filter {
+  outline: none;
+  border: 1px solid #FF1053;
+  width: 150px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+}
+#products .container #awesomeproduct {
+  display: flex;
+  flex-wrap: wrap;
+}
+#products .container #awesomeproduct .proBox {
+  margin-bottom: 30px;
+}
+#products .container #awesomeproduct .proBox img {
+  max-width: 100%;
+}
+#products .container #awesomeproduct .proBox .name {
+  font-size: 13px;
+}
+#products .container #awesomeproduct .proBox button {
+  width: 120px;
+  border: none;
+  background-image: linear-gradient(to right, #FF1053, #FF5830);
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  outline: none;
+}
+#products .container #awesomeproduct .proBox button:hover {
+  background-image: linear-gradient(to right, #FF1053, #ffda33);
+}
+
+#news {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #F8F9FA;
+}
+#news .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#news .container .newsheader {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#news .container .newsheader h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+#news .container .newsheader p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  font-size: 20px;
+  color: #bcb3b3;
+}
+#news .container .newscard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  margin: 10px;
+}
+#news .container .newscard img {
+  width: 100%;
+  height: auto;
+}
+#news .container .newscard .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+#news .container .newscard .text h6 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+#news .container .newscard .text p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  font-size: 18px;
+  color: #bcb3b3;
+}
+#news .container .newscard .text button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #FDA403;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#touch {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #F8F9FA;
+}
+#touch .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#touch .container .touchheader {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#touch .container .touchheader h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+#touch .container .touchheader p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  font-size: 20px;
+  color: #bcb3b3;
+}
+#touch .container .touchitem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+#touch .container .touchitem button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #FDA403;
+  padding: 10px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+}
+#touch .container .touchitem img {
+  width: 100%;
+  height: auto;
+}
+#touch .container .touchitem #adress {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+#touch .container .touchitem #phone {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+#touch .container .touchitem #email {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+#touch .container .touchitem #email strong {
+  color: #FDA403;
+}
+
+#FormMethod {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+#FormMethod .container {
+  margin-top: 20px;
+}
+
+#formDisplay .container #display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+#formDisplay .container #display .box {
+  width: 250px;
+  padding: 25px;
+  background-color: bisque;
+  box-shadow: 0 1px 10px rgb(0, 0, 0);
+}
+#formDisplay .container #display .box span {
+  font-weight: 500;
+  font-size: 18px;
+}
+#formDisplay .container #display .box button {
+  color: #fff;
+  background-color: brown;
+  transition: 1s;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+#formDisplay .container #display .box button:hover {
+  color: white;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border-top: 1px solid rgb(228, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+footer .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+header nav {
+  width: 85%;
+  margin: auto;
+}
+header nav .navbutton {
+  background-color: white;
+}
+header nav .collapseDiv {
+  justify-content: flex-end;
+}
+
+#eatwell {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://preview.colorlib.com/theme/eatwell/images/bg_3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#eatwell .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#eatwell .container .eatwellitem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#eatwell .container .eatwellitem h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+#eatwell .container .eatwellitem p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: grey;
+  font-size: 20px;
+}
+#eatwell .container .eatwellitem button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+#eatwell .container .eatwellitem button:hover {
+  background-color: white;
+  color: black;
+}
+
+#awesome {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #F8F9FA;
+}
+#awesome .awesomecontainer {
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#awesome .awesomecontainer .row .awesometext {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+#awesome .awesomecontainer .row .awesometext span {
+  color: grey;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 20px;
+}
+#awesome .awesomecontainer .row #awesomeproducts {
+  display: flex;
+  flex-wrap: wrap;
+}
+#awesome .awesomecontainer .row #awesomeproducts .remBox {
+  width: 30%;
+  margin-bottom: 30px;
+}
+#awesome .awesomecontainer .row #awesomeproducts .remBox img {
+  max-width: 100%;
+}
+#awesome .awesomecontainer .row #awesomeproducts .remBox button {
+  width: 150px;
+  border: none;
+  background-image: linear-gradient(to right, #FF1053, #FF5830);
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  outline: none;
+}
+#awesome .awesomecontainer .row #awesomeproducts .remBox button:hover {
+  background-image: linear-gradient(to right, #FF1053, #ffda33);
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border-top: 1px solid rgb(228, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+footer .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+header nav {
+  width: 85%;
+  margin: auto;
+}
+header nav .navbutton {
+  background-color: white;
+}
+header nav .collapseDiv {
+  justify-content: flex-end;
+}
+
+#eatwell {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://preview.colorlib.com/theme/eatwell/images/bg_3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#eatwell .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#eatwell .container .eatwellitem {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#eatwell .container .eatwellitem h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+#eatwell .container .eatwellitem p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: grey;
+  font-size: 20px;
+}
+#eatwell .container .eatwellitem button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+#eatwell .container .eatwellitem button:hover {
+  background-color: white;
+  color: black;
+}
+
+#wishlist {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#wishlist .wishlistcontainer {
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#wishlist .wishlistcontainer .row .wishlisttext {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+#wishlist .wishlistcontainer .row .wishlisttext span {
+  color: grey;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 20px;
+}
+#wishlist .wishlistcontainer .row #wishlistproducts {
+  display: flex;
+  flex-wrap: wrap;
+}
+#wishlist .wishlistcontainer .row #wishlistproducts .wishBox {
+  margin-bottom: 30px;
+}
+#wishlist .wishlistcontainer .row #wishlistproducts .wishBox img {
+  max-width: 100%;
+}
+#wishlist .wishlistcontainer .row #wishlistproducts .wishBox button {
+  width: 170px;
+  border: none;
+  background-image: linear-gradient(to right, #FF1053, #FF5830);
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  outline: none;
+}
+#wishlist .wishlistcontainer .row #wishlistproducts .wishBox button:hover {
+  background-image: linear-gradient(to right, #FF1053, #ffda33);
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border-top: 1px solid rgb(228, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+footer .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .foot span {
+  color: white;
+}

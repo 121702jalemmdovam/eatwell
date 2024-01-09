@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+position: relative;
+}
+header{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+  nav{
+    width: 85%;
+    margin: auto;
+    .navbutton{
+        background-color: white;
+    }
+    .collapseDiv{
+        justify-content: flex-end;
+       
+    }
+  }
+}
+#eatwell{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://preview.colorlib.com/theme/eatwell/images/bg_3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .eatwellitem{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h1{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: white;
+                font-size: 50px;
+                font-weight: 700;
+                font-family: "Playfair Display", serif;
+
+            }
+            p{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: grey;
+                font-size: 20px;
+            }
+            button{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 150px;
+                height: 50px;
+                background-color: transparent;
+                border: 2px solid white;
+                color: white;
+                font-weight: 700;
+                cursor: pointer;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+#awesome{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;  
+    background-color: #F8F9FA;
+    .awesomecontainer{
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .row{
+            .awesometext{
+                display: flex;
+                gap: 30px;
+                margin-bottom: 30px;
+                span{
+                    color: grey;
+                    font-weight: 700;
+                    font-size: 18px;
+                    padding-top: 20px;
+                }
+            }
+
+            #awesomeproducts{
+                display: flex;
+                flex-wrap: wrap;
+
+                .remBox{
+                    width: 30%;
+                    margin-bottom: 30px;
+                    img{
+                        max-width: 100%;
+                    }
+                    button{
+                        width: 150px;
+                        border: none;
+                        background-image: linear-gradient(to right,#FF1053,#FF5830);
+                        height: 40px;
+                        border-radius: 5px;
+                        color: white;
+                        font-weight: 600;
+                        outline: none;
+                        &:hover{
+                            background-image: linear-gradient(to right,#FF1053,#ffda33);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-top: 1px solid rgb(228, 220, 220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    .container {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+
+        .foot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                color: white;
+            }
+        }
+    }
+}
